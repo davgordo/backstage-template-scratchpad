@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: url-picker-template
-  title: OpenAPI Specification
-  description: Create an OpenAPI specification
+  title: URL Picker
+  description: experimentation
 spec:
   owner: service@example.com
   type: api
