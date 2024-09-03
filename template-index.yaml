@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: contract-first-idp-collection
+  name: contract-first-idp-scratch-collection
   description: A collection of Backstage Golden Path Templates
 spec:
   type: url
