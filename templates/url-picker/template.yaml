@@ -1,0 +1,52 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: api-specification-template
+  title: OpenAPI Specification
+  description: Create an OpenAPI specification
+spec:
+  owner: service@example.com
+  type: api
+
+  parameters:
+    - title: API server parameters
+      required:
+        - api_id
+        - owner
+        - application
+        - description
+      properties:
+        api_id:
+          title: Name
+          type: string
+          description: Unique name of the API
+        description:
+          title: Description
+          type: string
+          description: API description
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the API
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds: 
+              - Group
+        application:
+          title: System
+          type: string
+          description: System to which this API belongs
+          ui:field: OwnedEntityPicker
+          ui:options:
+            allowedKinds:
+            - System
+        mock_provider_url:
+          title: Mock Provider URL
+          type: string
+          description: Microcks Host
+          ui:field: OwnedEntityPicker
+          ui:options:
+            allowedKinds:
+            - Location
+
+  steps: []
