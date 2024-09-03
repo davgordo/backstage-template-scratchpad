@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: url-picker-template
-  title: URL Picker
+  title: URL Picker v2
   description: experimentation
 spec:
   owner: service@example.com
@@ -44,7 +44,7 @@ spec:
           title: Mock Provider URL
           type: string
           description: Microcks Host
-          ui:field: OwnedEntityPicker
+          ui:field: EntityPicker
           ui:options:
             allowedKinds:
             - Location
